@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { IoAddCircle } from "react-icons/io5";
 
 function CreateArea(props) {
   const [note, setNote] = useState({
@@ -44,7 +45,7 @@ function CreateArea(props) {
           placeholder="Take a note..."
           rows="3"
         />
-        <button onClick={submitNote}>Add</button>
+        <button className="add" onClick={submitNote}>Add </button>
       </form>
     </div>
   );
